@@ -1,18 +1,20 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './components/shared/Layout'
-
+import Dashboard from './components/Dashboard'
 
 
 const App = () => {
   return (
-   <Routes>
-    <Route path='' element={<Layout />}>
-    {/* <Route path='' element={<Layout />}> */}
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Dashboard />} />
+        <Route path='/contact' element={<Contact />} />
 
-    </Route>
-
-   </Routes>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   )
 }
 

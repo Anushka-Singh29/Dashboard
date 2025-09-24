@@ -1,9 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+
 
 const Layout = () => {
   return (
     <div>
-      LAyout
+      <div>sidebard</div>
+      <div>Header</div>
+      <div>{<Outlet />}</div>
     </div>
   )
 }
