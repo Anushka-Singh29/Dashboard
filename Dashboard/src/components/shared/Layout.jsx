@@ -3,13 +3,13 @@ import { Outlet } from 'react-router-dom'
 
 
 const Layout = () => {
-  return (
-    <div>
-      <div>sidebard</div>
-      <div>Header</div>
-      <div>{<Outlet />}</div>
-    </div>
-  )
+    return (
+        <div>
+            <div className='bg-sky-200'>Sidebar</div>
+            <div>Header</div>
+            <div>{<Outlet />}</div>
+        </div>
+    )
 }
 
 export default Layout
