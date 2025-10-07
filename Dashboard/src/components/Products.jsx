@@ -8,7 +8,7 @@ const Products = () => {
       <br />
       <Link to='/'> go to Home/Dashboard
       </Link>
-    </div>
+    </div> 
   )
 }
 
