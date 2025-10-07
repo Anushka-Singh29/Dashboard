@@ -7,12 +7,12 @@ const Header = () => {
     const navigate = useNavigate()
 
     return (
-        <div className='bg-white h-16 px-4 flex items-center justify-between border-b border-gray-300'>
+        <div className='bg-white h-14 px-4 flex items-center justify-between border-b border-gray-300'>
             <div className='relative'>
-                <HiOutlineSearch fontSize={20} className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-400' />
+                <HiOutlineSearch fontSize={18} className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-400' />
                 <input type="text" placeholder="Search"
                     className='text-sm focus:outline-none active:outline-none rounded-sm
-                h-10 w-[24rem] border border-gray-400 pl-10'
+                h-8 w-[20rem] border border-gray-400 pl-10'
                 />
             </div>
             <div className='flex items-center gap-2 mr-2'>
